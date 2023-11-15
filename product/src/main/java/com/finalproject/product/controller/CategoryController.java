@@ -3,7 +3,6 @@ package com.finalproject.product.controller;
 import com.finalproject.product.dto.CategoryCreateCmdDTO;
 import com.finalproject.product.entity.Category;
 import com.finalproject.product.service.CategoryService;
-import com.finalproject.product.service.ProductService;
 import jakarta.servlet.http.HttpServletResponse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
@@ -15,8 +14,6 @@ import java.util.UUID;
 @RequestMapping("/categories")
 public class CategoryController {
 
-    @Autowired
-    private ProductService productService;
     @Autowired
     private CategoryService categoryService;
 
